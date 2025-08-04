@@ -26,7 +26,8 @@ queue<int> q2(q1);
 - `pop()`: Xóa phần tử (theo quy tắc FIFO) của queue 
 - `swap(q1, q2)`: Swap 2 queue
 
-> [!NOTE] Các thao tác trên đều có độ phức tạp $O(1)$ trừ thao tác `swap` là $O(n)$
+> [!NOTE] 
+> Các thao tác trên đều có độ phức tạp $O(1)$ trừ thao tác `swap` là $O(n)$
 
 ## Deque
 - Deque là viết tắt của Double Ended Queue
@@ -63,7 +64,8 @@ deque<int> dq = {1, 2, 3, 4, 5};
 - `erase(it)`: Xóa phần tử tại vị trí xác định
 - `clear()`: Xóa toàn bộ queue
 
-> [!NOTE] Các thao tác trên 2 đầu của queue thường sẽ có độ phức tạp $O(1)$. Trong khi đó các thao tác tại phần tử bất kì trong queue thưởng có độ phức tạo $O(n)$
+> [!NOTE] 
+> Các thao tác trên 2 đầu của queue thường sẽ có độ phức tạp $O(1)$. Trong khi đó các thao tác tại phần tử bất kì trong queue thưởng có độ phức tạo $O(n)$
 
 ## Priority Queue
 - Là queue mà mỗi phần tử đều có một độ ưu tiên nhất định
@@ -78,7 +80,8 @@ priority_queue<data_type, container, comp> queue_name
 - `container`: là cấu trúc dữ liệu dùng để lưu các phần tử của queue. Mặc định priority queue dùng vector đảm nhiệm vai trò này
 - `comp`: hàm so sánh, để quyết định cách các phần tử được gán độ ưu tiên (priority)
 
-> [!NOTE] priority_queue là một lớp bọc (wrapper) xung quanh 1 containter (mặc định là vector). Thông thường nó sử dụng binary heap để duy trì các đặc tính của priority queue 
+> [!NOTE] 
+> priority_queue là một lớp bọc (wrapper) xung quanh 1 containter (mặc định là vector). Thông thường nó sử dụng binary heap để duy trì các đặc tính của priority queue 
 
 **Ví dụ**: khởi tạo một priority queue nhưng giá trị lớn hơn có độ ưu tiên thấp hơn
 ```cpp
@@ -93,4 +96,5 @@ priority_queue<int, vector<int>, greater<int>> pq;
 - `pop()`: Xóa phần tử có priority lớn nhất trong queue
 - `swap()`: Swap 2 queue
 
-> [!NOTE] Thêm bớt phần tử trong priority queue có độ phức tạp $O(\log n)$. Còn truy cập vào phần tử "top" có độ phức tạp $O(1)$
+> [!NOTE] 
+> Thêm bớt phần tử trong priority queue có độ phức tạp $O(\log n)$. Còn truy cập vào phần tử "top" có độ phức tạp $O(1)$

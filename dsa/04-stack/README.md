@@ -1,4 +1,4 @@
-# Cấu trúc dữ liệu ngăn xếp - Stack
+# Stack
 
 - Là kiểu cấu trúc dữ liệu hoạt động theo nguyên tắc Last In First Out (LIFO) hoặc First In Last Out (FILO). Có nghĩa là phần tử đầu tiên được thêm vào Stack sẽ là phần tử cuối cùng được lấy ra và ngược lại, phần tử cuối cùng được thêm vào sẽ là phần tử đầu tiên được lấy ra.
 - Có thể tưởng tượng Stack như 1 cái hộp chữ nhật như sau:
