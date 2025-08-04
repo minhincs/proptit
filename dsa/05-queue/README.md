@@ -1,9 +1,9 @@
 # Queue, Deque, Priority Queue
 
-## Queue
+## 1. Queue
 - Hoạt động theo quy tắc FIFO - First In First Out, tức là phần tử được thêm vào đầu tiên sẽ là phần tử được lấy ra đầu tiên
 
-### Khai báo queue
+### 1a. Khai báo queue
 Khai báo queue rỗng:
 ```cpp
 queue<data_type> queue_name;
@@ -17,7 +17,7 @@ queue<int> q1; // Queue cho trước
 queue<int> q2(q1);
 ```
 
-### Thao tác trên Queue
+### 1b. Thao tác trên Queue
 - `front()`: Truy cập vào phần tử được thêm sớm nhất trong queue
 - `back()`: Truy cập vào phần tử được thêm muộn nhất trong queue
 - `empty()`: Kiểm tra xem queue có rỗng hay không
@@ -29,11 +29,11 @@ queue<int> q2(q1);
 > [!NOTE] 
 > Các thao tác trên đều có độ phức tạp $O(1)$ trừ thao tác `swap` là $O(n)$
 
-## Deque
+## 2. Deque
 - Deque là viết tắt của Double Ended Queue
 - Cho phép người dùng có thể thực hiện thêm/bớt phần tử trên cả 2 đầu của queue 
 
-### Khai báo Deque
+### 2a. Khai báo Deque
 - Khởi tạo một Deque rỗng
 ```cpp
 deque<data_type> deque_name;
@@ -48,7 +48,7 @@ deque<date_type> deque_name(n, p);
 deque<int> dq = {1, 2, 3, 4, 5};
 ```
 
-### Thao tác trên Deque
+### 2b. Thao tác trên Deque
 - `front()`: Truy cập phần tử đầu queue
 - `back()`: Truy cập phần tử cuối queue
 - `begin()`: Trả về Iterator chỉ vào phần tử đầu tiên
@@ -67,12 +67,12 @@ deque<int> dq = {1, 2, 3, 4, 5};
 > [!NOTE] 
 > Các thao tác trên 2 đầu của queue thường sẽ có độ phức tạp $O(1)$. Trong khi đó các thao tác tại phần tử bất kì trong queue thưởng có độ phức tạo $O(n)$
 
-## Priority Queue
+## 3. Priority Queue
 - Là queue mà mỗi phần tử đều có một độ ưu tiên nhất định
 - Các phần tử sẽ được lấy ra dựa vào độ ưu tiên đó
 - Mặc định, giá trị của phần tử sẽ là độ ưu tiên của nó, tức là phần tử có giá trị càng cao thì độ ưu tiên càng cao. Nhưng có thể cài đặt để thay đổi cách sắp xếp độ ưu tiên
 
-### Khai báo Priority Queue
+### 3a. Khai báo Priority Queue
 ```cpp
 priority_queue<data_type, container, comp> queue_name
 ```
@@ -88,7 +88,7 @@ priority_queue<data_type, container, comp> queue_name
 priority_queue<int, vector<int>, greater<int>> pq;
 ```
 
-### Thao tác trên priority queue
+### 3b. Thao tác trên priority queue
 - `empty()`: Kiểm tra xem queue có rỗng không
 - `size()`: Trả về số phần tử có trong queue
 - `top()`: Trả về giá trị của phần tử có độ ưu tiên cao nhất 
