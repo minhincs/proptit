@@ -10,7 +10,7 @@
 - Không có khuyên (cạnh nối 1 đỉnh với chính nó)
 - Không có cạnh song song (nhiều cạnh nối cùng 1 đỉnh)
 
->[!example]
+>[!info]
 >```
 >A --- B
 >|     |
@@ -21,7 +21,7 @@
 #### 1.1.2. Đa đồ thị
 Có nhiều cạnh song song hoặc khuyên
 
->[!example]
+>[!info]
 >```
 >A == B (2 cạnh song song)
 >A -- A (khuyên)
@@ -31,7 +31,7 @@ Có nhiều cạnh song song hoặc khuyên
 - Mỗi cạnh được biểu diễn bởi một mũi tên 
 - Thứ tự viết quan trọng: $(U, V) \neq (V, U)$ 
 
->[!example]
+>[!info]
 >```
 >A -> B -> C
 >```
@@ -69,7 +69,7 @@ Có nhiều cách lưu trữ đồ thị, ba cách phổ biến nhất là:
 - Với đồ thị có hướng: ma trận không đối xứng
 - Với đồ thị vô hướng: ma trận đối xứng
 
->[!example]
+>[!info]
 >```
 >[ 0 1 1 ]
 >[ 1 0 1 ]
@@ -79,7 +79,7 @@ Có nhiều cách lưu trữ đồ thị, ba cách phổ biến nhất là:
 ### 2.2. Danh sách kề
 Mỗi đỉnh lưu lại danh sách các đỉnh kề với nó
 
->[!example]
+>[!info]
 >```
 >0: 1, 2
 >1: 0, 2
@@ -89,7 +89,7 @@ Mỗi đỉnh lưu lại danh sách các đỉnh kề với nó
 ### 2.3. Danh sách con
 Lưu lại danh sách các cặp $(u, v)$ biểu diễn các cạnh 
 
->[!example]
+>[!info]
 >```
 >[(0, 1), (0, 2), (1, 2)]
 >```
